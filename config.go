@@ -21,7 +21,7 @@ func loadConfig() Config {
 
 	file, err := os.Open("config.toml")
 	if err != nil {
-		log.Fatalf("no config file found, you can generate one with ./my_forward_proxy --init")
+		log.Fatalf("no config file found, you can generate one with ./bin/my_forward_proxy --init or make config")
 	}
 	defer file.Close()
 

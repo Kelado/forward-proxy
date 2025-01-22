@@ -9,7 +9,7 @@ run: build
 	./$(BIN_DIR)/$(APP)
 
 config: build
-	./$(BIN_DIR)/$(APP) --init
+	@./$(BIN_DIR)/$(APP) --init
 
 delete-cache: build
 	./$(BIN_DIR)/$(APP) --delete-cache
